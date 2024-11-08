@@ -40,6 +40,18 @@ section
     margin-top: 40px;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 20px 15px;
+    }
+    .section-headline {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+    .section-button {
+        margin: 20px 0 0 ;
+    }
+}
 
 /*
 hero
@@ -75,6 +87,71 @@ hero
     width: 100%;
     height: 100%;
 }
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+    .hero > strong {
+        font-size: 50px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 868px) {
+    .hero {
+        height: 400px;
+    }
+}
+@media screen and (min-width: 869px) and (max-width: 1000px) {
+    .hero {
+        height: 500px;
+    }
+}
+
+/*
+header
+*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+}
+.header-logo {
+    margin: 0;
+}
+.header-logo > a {
+    display: block;
+}
+/* .header-nav {} */
+.header-navlist {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .header-navitem {} */
+.header-navitem > a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.header-navitem > a:hover {
+    border-bottom: 2px solid #333;
+}
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 12px;
+    }
+}
 
 /*
 about
@@ -92,6 +169,20 @@ about
     font-size: 30px;
 }
 /* .about-description {} */
+@media screen and (max-width: 768px) {
+    .about {
+        display: block;
+    }
+    .about-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+    }
+    .about-headline {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
                    
 .grid {
     margin: 0;
@@ -111,6 +202,16 @@ about
 }
 .frid-col-4 > .grid-item {
     width: 25%;
+}
+@media screen and (max-width: 768px) {
+    .grid {
+        display: block;
+    }
+    .frid-col-2 > .grid-item ,
+    .frid-col-3 > .grid-item ,
+    .frid-col-4 > .grid-item {
+        width: 100%;margin: 20px 0;
+    }
 }
 
 /* 
@@ -234,6 +335,14 @@ button
     min-width: 500px;
     min-height: 100px;
 }
+@media screen and (max-width: 768px) {
+    .select,
+    .input,
+    .textarea {
+        min-width: auto;
+        width: 100%;
+    }
+}
 
 /*
 form
@@ -252,6 +361,15 @@ form
     text-align: center;
     margin: 20px;
 }
+@media screen and (max-width: 768px) {
+    .form-table,
+    .form-table tbody,
+    .form-table th,
+    .form-table td,
+    .form-button {
+        display: block;
+    }
+}
 
 /*
 works
@@ -263,6 +381,16 @@ works
 }
 .works > img {
     margin: 0 15px;
+}
+@media screen and (max-width: 768px) {
+    .works {
+        margin: 20px 0;
+        padding: 10px;
+    }
+    .works > img {
+        width: 100px;
+        margin: 5px;
+    }
 }
 
 /*
@@ -306,4 +434,19 @@ footer
 .footer-copy {
     display: block;
     text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .footer-map {
+        padding: 15px;
+        display: block;
+
+    }
+    .footer-map > iframe {
+        width: 100%;
+        height: 200px;
+    }
+    .footer-mapinfo {
+        width: 100%;
+        text-align: center;
+    }
 }
